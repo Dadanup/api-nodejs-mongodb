@@ -13,6 +13,7 @@ const UserScheme= new mongoose.Schema(
             type:String,
             unique:true,
             required:true
+            
         }
     }
 )
