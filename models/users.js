@@ -13,9 +13,13 @@ const UserScheme= new mongoose.Schema(
             type:String,
             unique:true,
             required:true
-            
         }
+        
+    },
+    {
+        versionKey:false, //__v
+        timestamps:true   //created  at and update at
     }
+    
 )
-
 module.exports=mongoose.model('user',UserScheme);

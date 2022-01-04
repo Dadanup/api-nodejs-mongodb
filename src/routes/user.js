@@ -7,5 +7,9 @@ router.get(
     `/${path}`,
     controller.getDAta
 );
+router.post(
+    `/${path}`,
+    controller.insertData
+)
 
 module.exports=router
